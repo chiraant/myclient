@@ -1,13 +1,32 @@
 #  EVALUATE BOARD: MyApp
 
 ## KANÄLE
-> Beschreibe die Vertriebs- und Marketingkanäle, über welche die NutzerInnen erreicht werden sollen. Beispiel: TikTok, E-Mail, Flyer etc.
+- Online-Marketing
+
+- E-Mail-Marketing
+
+- Kooperationen mit IT-Unternehmen
+
+- Teilnahme an Branchenveranstaltungen und Konferenzen
 
 ## UNFAIRER VORTEIL
-> Notiere Faktoren der Lösung, die nur schwer oder gar nicht kopierbar sind. Diese Faktoren machen es schwierig, ein Konkurrenzprodukt deiner Lösung zu lancieren. 
+>Benutzerzentriertes Design: myclients legt großen Wert darauf, die Bedürfnisse und das Feedback der Benutzer zu berücksichtigen, um eine intuitive und ansprechende Benutzeroberfläche zu gestalten. Durch kontinuierliches Testing und Optimierung werden Benutzerfreundlichkeit und Nutzerzufriedenheit maximiert, was zu einer starken Bindung der Nutzer an die Plattform führt
 
 ## KPI
-> Trage hier Messgrössen ein, mit denen sich der Erfolg deiner Lösung messen lässt. Beispiele: Anzahl Verkäufe, Anzahl Kunden, Anzahl Transaktionen, Umsatz...
+- Anzahl aktiver Nutzer
+
+- Kundenzufriedenheit
+
+- Wachstum der Kundenbasis
+
+- Nutzungshäufigkeit
+
+
+- Kundenbindung
+
+
+- Betriebseffizienz
 
 ## EINNAHMEQUELLEN
-> Beschreibe, wie mit deiner Lösung Geld verdient werden soll. Wo und durch wen werden Einnahmen generiert? Hinweis: die Einnahmen müssen nicht unbedingt von den NutzerInnen stammen. Es kann auch eine Trägerschaft wie z.B. ein Verein mit Mitgliederbeiträgen, Spenden oder ähnlichem gewählt werden.
+>Lizenzgebühren:
+ Unternehmen können myclients durch den Kauf von Lizenzen erwerben, die es ihnen ermöglichen, die Software dauerhaft zu nutzen. Lizenzgebühren könnten einmalig oder regelmäßig anfallen, um Zugang zu Updates und Support zu erhalten.
