@@ -1,11 +1,13 @@
 package ch.zhaw.myclient.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,4 +40,13 @@ public class AssetController {
         return new ResponseEntity<>(allAsset, HttpStatus.OK);
     }
     
+    @GetMapping("/asset/{id}")
+    public ResponseEntity<Asset> getAssetById(@PathVariable String id) {
+        Optional<Asset> optAsset = assetRepository.findById(id);
+        if (optAsset.isPresent()) {
+            return new ResponseEntity<>(optAsset.get(), HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
 }
