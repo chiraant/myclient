@@ -10,6 +10,7 @@ public class AssetCreateDTO {
     private String purchaseDate;
     private String owner;
     private String guaranteeEnd;
+    private AssetState assetState;
     
    
 }

@@ -23,4 +23,5 @@ public class Asset {
     private String purchaseDate;
     @NonNull
     private String guaranteeEnd;
+    private AssetState assetState = AssetState.Unassigned;
 }
