@@ -5,8 +5,8 @@ import lombok.NoArgsConstructor;
 
 @Getter
 @NoArgsConstructor
-public class DocCreateDTO {
+
+public class DocTypeChangeDTO {
+    private String docId;
     private String title;
-    private String uploadDate;
-    private DocType docType;
 }

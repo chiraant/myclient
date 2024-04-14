@@ -9,17 +9,55 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import ch.zhaw.myclient.model.Doc;
 import ch.zhaw.myclient.model.DocCreateDTO;
+import ch.zhaw.myclient.model.DocType;
 import ch.zhaw.myclient.repositories.DocRepository;
+import ch.zhaw.myclient.service.DocService;
 
 @RestController
 @RequestMapping("/api")
 public class DocController {
+
+    private DocService docService;
+
+    public DocController(DocService docService) {
+        this.docService = docService;
+    }
+
+    @PutMapping("/doc/{id}/guarantee")
+    public ResponseEntity<Doc> guaranteeDoc(@PathVariable String id) {
+        return ResponseEntity.ok(docService.updateDocType(id, DocType.Guarantee));
+    }
+    @PutMapping("/doc/{id}/offer")
+    public ResponseEntity<Doc> offerDoc(@PathVariable String id) {
+        return ResponseEntity.ok(docService.updateDocType(id, DocType.Offer));
+    }
+
+    @PutMapping("/doc/{id}/invoice")
+    public ResponseEntity<Doc> invoiceDoc(@PathVariable String id) {
+        return ResponseEntity.ok(docService.updateDocType(id, DocType.Invoice));
+    }
+
+    @PutMapping("/doc/{id}/order")
+    public ResponseEntity<Doc> orderDoc(@PathVariable String id) {
+        return ResponseEntity.ok(docService.updateDocType(id, DocType.Order));
+    }
+    @PutMapping("/doc/{id}/other")
+    public ResponseEntity<Doc> otherDoc(@PathVariable String id) {
+        return ResponseEntity.ok(docService.updateDocType(id, DocType.Other));
+    }
+
+
+
+
+
+
     @Autowired
     DocRepository docRepository;
 

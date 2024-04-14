@@ -10,7 +10,7 @@ import ch.zhaw.myclient.repositories.AssetRepository;
 @Service
 public class AssetService {
 
-    private final AssetRepository assetRepository;
+    private AssetRepository assetRepository;
 
     public AssetService(AssetRepository assetRepository) {
         this.assetRepository = assetRepository;

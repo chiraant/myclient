@@ -7,9 +7,11 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 @NoArgsConstructor
 @RequiredArgsConstructor
+@Setter
 @Getter
 @Document("doc")
 public class Doc {
@@ -19,4 +21,6 @@ public class Doc {
     private String title;
     @NonNull
     private String uploadDate;
+
+    private DocType docType = DocType.Other;
 }
