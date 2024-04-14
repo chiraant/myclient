@@ -23,7 +23,6 @@ public class DocController {
     @Autowired
     DocRepository docRepository;
 
-
     @PostMapping("/doc")
     public ResponseEntity<Doc> createDoc(
             @RequestBody DocCreateDTO dDTO) {
@@ -33,14 +32,12 @@ public class DocController {
         return new ResponseEntity<>(d, HttpStatus.CREATED);
     }
 
-
-
     @GetMapping("/doc")
-    public ResponseEntity<List<Doc>>getAllDoc() {
+    public ResponseEntity<List<Doc>> getAllDoc() {
         List<Doc> allDoc = docRepository.findAll();
         return new ResponseEntity<>(allDoc, HttpStatus.OK);
     }
-    
+
     @GetMapping("/doc/{id}")
     public ResponseEntity<Doc> getDocById(@PathVariable String id) {
         Optional<Doc> optDoc = docRepository.findById(id);
