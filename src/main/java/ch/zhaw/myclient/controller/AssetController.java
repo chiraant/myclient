@@ -26,7 +26,7 @@ import ch.zhaw.myclient.service.AssetService;
 
 public class AssetController {
 
-    private final AssetService assetService;
+    private AssetService assetService;
 
     public AssetController(AssetService assetService) {
         this.assetService = assetService;
