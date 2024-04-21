@@ -9,4 +9,5 @@ import lombok.NoArgsConstructor;
 public class AssetStateChangeDTO {
     private String assetId;
     private String assetName;
+    private String personEmail;
 }

@@ -58,7 +58,7 @@ public class AssetController {
     @PostMapping("/asset")
     public ResponseEntity<Asset> createAsset(
             @RequestBody AssetCreateDTO aDTO) {
-        Asset aDAO = new Asset(aDTO.getAssetName(), aDTO.getPurchaseDate(), aDTO.getOwner(), aDTO.getGuaranteeEnd());
+        Asset aDAO = new Asset(aDTO.getAssetName(), aDTO.getPurchaseDate(), aDTO.getGuaranteeEnd());
         Asset a = assetRepository.save(aDAO);
 
         return new ResponseEntity<>(a, HttpStatus.CREATED);

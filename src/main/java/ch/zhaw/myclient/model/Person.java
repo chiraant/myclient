@@ -2,10 +2,10 @@ package ch.zhaw.myclient.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.lang.NonNull;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
@@ -13,16 +13,14 @@ import lombok.Setter;
 @RequiredArgsConstructor
 @Setter
 @Getter
-@Document("asset")
-public class Asset {
+@Document("person")
+public class Person {
     @Id
     private String id;
     @NonNull
-    private String assetName;
+    private String firstName;
     @NonNull
-    private String purchaseDate;
+    private String lastName;
     @NonNull
-    private String guaranteeEnd;
-    private AssetState assetState = AssetState.Unassigned;
-    private String personId;
+    private String email;
 }
