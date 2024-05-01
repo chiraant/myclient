@@ -18,7 +18,7 @@ public class Doc {
     @Id
     private String id;
     @NonNull
-    private String title;
+    private String docTitle;
     @NonNull
     private String uploadDate;
 

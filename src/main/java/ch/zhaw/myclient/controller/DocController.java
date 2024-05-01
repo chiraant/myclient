@@ -64,7 +64,7 @@ public class DocController {
     @PostMapping("/doc")
     public ResponseEntity<Doc> createDoc(
             @RequestBody DocCreateDTO dDTO) {
-        Doc dDAO = new Doc(dDTO.getTitle(), dDTO.getUploadDate());
+        Doc dDAO = new Doc(dDTO.getDocTitle(), dDTO.getUploadDate());
         Doc d = docRepository.save(dDAO);
 
         return new ResponseEntity<>(d, HttpStatus.CREATED);

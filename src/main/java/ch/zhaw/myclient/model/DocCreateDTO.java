@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 public class DocCreateDTO {
-    private String title;
+    private String docTitle;
     private String uploadDate;
     private DocType docType;
 }
