@@ -2,60 +2,57 @@
   import axios from "axios";
   import { page } from "$app/stores";
   import { onMount } from "svelte";
-  
 
-  // TODO: setze hier die URL zu deinem mit Postman erstellten Mock-Server ein
   const api_root = $page.url.origin;
 
   let assets = [];
+  let persons = [];  // Liste der Personen
   let asset = {
     assetName: null,
     purchaseDate: null,
     guaranteeEnd: null,
     assetState: null,
+    personId: null,  // Person-Id für das Asset
   };
 
   onMount(() => {
     getAssets();
+    getPersons();
   });
 
   function getAssets() {
-    var config = {
-      method: "get",
-      url: api_root + "/api/asset",
-      headers: {},
-    };
-
-    axios(config)
-      .then(function (response) {
-        assets = response.data;
-      })
-      .catch(function (error) {
+    axios.get(api_root + "/api/asset")
+      .then(response => assets = response.data)
+      .catch(error => {
         alert("Could not get assets");
         console.log(error);
       });
   }
 
-  function createAsset() {
-    var config = {
-      method: "post",
-      url: api_root + "/api/asset",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      data: asset,
-    };
-
-    axios(config)
-      .then(function (response) {
-        alert("Job created");
-        getAssets();
-      })
-      .catch(function (error) {
-        alert("Could not create Asset");
+  function getPersons() {
+    axios.get(api_root + "/api/person")
+      .then(response => persons = response.data)
+      .catch(error => {
+        alert("Could not get persons");
         console.log(error);
       });
   }
+
+  function createAsset() {
+    axios.post(api_root + "/api/asset", asset, {
+      headers: {"Content-Type": "application/json"}
+    })
+    .then(response => {
+      alert("Asset created");
+      getAssets();
+    })
+    .catch(error => {
+      alert("Could not create asset");
+      console.log(error);
+    });
+  }
+
+
 </script>
 
 <h1 class="mt-3">Create Asset</h1>
@@ -95,17 +92,19 @@
   <button type="button" class="btn btn-primary" on:click={createAsset}
     >Submit</button
   >
+
 </form>
 
-<h1>All Asset</h1>
+<h1>All Assets</h1>
 <table class="table">
   <thead>
     <tr>
       <th scope="col">Name</th>
       <th scope="col">State</th>
       <th scope="col">Purchase Date</th>
-      <th scope="col">Gurantee End</th>
-      <th scope="col">PersonId</th>
+      <th scope="col">Guarantee End</th>
+      <th scope="col">Person</th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -115,7 +114,8 @@
         <td>{asset.assetState}</td>
         <td>{asset.purchaseDate}</td>
         <td>{asset.guaranteeEnd}</td>
-        <td>{asset.PersonId}</td>
+        <td>{asset.personId}</td>
+        <td><button type="button" class="btn btn-primary">Assign</button></td>
       </tr>
     {/each}
   </tbody>
