@@ -20,7 +20,6 @@ import ch.zhaw.myclient.model.AssetState;
 import ch.zhaw.myclient.repositories.AssetRepository;
 import ch.zhaw.myclient.service.AssetService;
 
-
 @RestController
 @RequestMapping("/api")
 
@@ -39,8 +38,8 @@ public class AssetController {
 
     @PutMapping("/asset/{id}/unassign")
     public ResponseEntity<Asset> unassignAsset(@PathVariable String id) {
-    return ResponseEntity.ok(assetService.updateAssetForUnassignment(id));
-}
+        return ResponseEntity.ok(assetService.updateAssetForUnassignment(id));
+    }
 
     @PutMapping("/asset/{id}/repair")
     public ResponseEntity<Asset> setAssetToRepair(@PathVariable String id) {
@@ -51,7 +50,6 @@ public class AssetController {
     public ResponseEntity<Asset> disposeAsset(@PathVariable String id) {
         return ResponseEntity.ok(assetService.updateAssetState(id, AssetState.Disposed));
     }
-
 
     @Autowired
     AssetRepository assetRepository;
@@ -66,11 +64,11 @@ public class AssetController {
     }
 
     @GetMapping("/asset")
-    public ResponseEntity<List<Asset>>getAllAsset() {
+    public ResponseEntity<List<Asset>> getAllAsset() {
         List<Asset> allAsset = assetRepository.findAll();
         return new ResponseEntity<>(allAsset, HttpStatus.OK);
     }
-    
+
     @GetMapping("/asset/{id}")
     public ResponseEntity<Asset> getAssetById(@PathVariable String id) {
         Optional<Asset> optAsset = assetRepository.findById(id);

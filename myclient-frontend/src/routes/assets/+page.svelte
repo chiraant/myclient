@@ -4,7 +4,7 @@
   import { onMount } from "svelte";
 
   const api_root = $page.url.origin;
-
+  let selectedEmails = {};
   let assets = [];
   let persons = [];  // Liste der Personen
   let asset = {
@@ -20,13 +20,36 @@
     getPersons();
   });
 
+
+  async function changeAssetState(assetId, newState) {
+    try {
+      const response = await axios.put(`${api_root}/api/asset/${assetId}/${newState}`);
+      alert('Asset state updated to ' + newState);
+      loadAssets(); // Reload assets to reflect changes
+    } catch (error) {
+      console.error('Failed to update asset state', error);
+      alert('Failed to update asset state');
+    }
+  }
+
+  async function loadAssets() {
+    try {
+      const response = await axios.get(`${api_root}/api/asset`);
+      assets = response.data;
+    } catch (error) {
+      console.error('Error fetching assets', error);
+    }
+  }
+
+  loadAssets();
+
   function getAssets() {
-    axios.get(api_root + "/api/asset")
-      .then(response => assets = response.data)
-      .catch(error => {
-        alert("Could not get assets");
-        console.log(error);
+    axios.get(`${api_root}/api/asset`).then(response => {
+      assets = response.data;
+      assets.forEach(asset => {
+        selectedEmails[asset.id] = ''; // Initialisiere alle mit leerem String
       });
+    }).catch(error => console.error('Error fetching assets', error));
   }
 
   function getPersons() {
@@ -62,7 +85,29 @@
         console.log(error);
       });
   }
+  function assignAsset(assetId) {
+    if (!selectedEmails[assetId]) {
+      alert('Please select an email to assign');
+      return;
+    }
 
+    const data = {
+      assetId: assetId,
+      personEmail: selectedEmails[assetId]
+    };
+
+    axios.put(`${api_root}/api/service/assignasset`, data, {
+      headers: {"Content-Type": "application/json"}
+    })
+    .then(response => {
+      alert('Asset assigned');
+      getAssets();  // Reload assets to reflect changes
+    })
+    .catch(error => {
+      alert('Failed to assign asset');
+      console.error(error);
+    });
+  }
 </script>
 
 <h1 class="mt-3">Create Asset</h1>
@@ -126,15 +171,42 @@
         <td>{asset.guaranteeEnd}</td>
         <td>{asset.personId}</td>
         <td>
-          <button type="button" class="btn btn-primary">Edit</button>
+          {#if asset.assetState === 'Unassigned'}
+            <select bind:value={selectedEmails[asset.id]}>
+              <option value="">select Email to assign</option>
+              {#each persons as person}
+                <option value={person.email}>{person.email}</option>
+              {/each}
+            </select>
+            <button type="button" class="btn btn-primary"
+              disabled={!selectedEmails[asset.id]}
+              on:click={() => assignAsset(asset.id)}>
+              Assign
+            </button>
+          {:else}
+            <span></span>
+          {/if}
         </td>
         <td>
           <button type="button"
-                  class="btn {asset.assetState === 'Assigned' ? 'btn-primary' : 'btn-secondary'}"
-                  on:click={asset.assetState === 'Assigned' ? () => unassignAsset(asset.id) : null}
-                  disabled={asset.assetState !== 'Assigned'}>
+                  class="btn {asset.assetState === 'Assigned' || asset.assetState === 'InRepair' ? 'btn-primary' : 'btn-secondary'}"
+                  on:click={asset.assetState === 'Assigned' || asset.assetState === 'InRepair' ? () => changeAssetState(asset.id, 'unassign') : null}
+                  disabled={asset.assetState !== 'Assigned' && asset.assetState !== 'InRepair'}>
             Unassign
           </button>
+        </td>
+        <td>
+          {#if asset.assetState === 'Assigned'}
+            <button on:click={() => changeAssetState(asset.id, 'repair')}>To Repair</button>
+          {/if}
+          {#if asset.assetState === 'InRepair'}
+          <button class="btn btn-success" on:click={() => changeAssetState(asset.id, 'assign')}>
+            Repaired
+          </button>
+        {/if}
+          {#if asset.assetState !== 'Disposed'}
+            <button on:click={() => changeAssetState(asset.id, 'dispose')}>Dispose</button>
+          {/if}
         </td>
       </tr>
     {/each}

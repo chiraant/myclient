@@ -51,6 +51,9 @@ public class AssetService {
         Asset asset = assetRepository.findById(assetId)
             .orElseThrow(() -> new RuntimeException("Asset not found with id " + assetId));
         asset.setAssetState(newState);
+        if (newState == AssetState.Disposed) {
+            asset.setPersonId(null); // Setze die personId auf null, wenn der Zustand "Disposed" ist
+        }
         return assetRepository.save(asset);
     }
 
