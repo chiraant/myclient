@@ -23,7 +23,11 @@ public class AssetService {
 
 
 
-    public Optional<Asset> assignasset(String assetId, String personEmail) {
+    
+
+
+
+    public Optional<Asset> assignAsset(String assetId, String personEmail) {
         Optional<Asset> assetToAssign = assetRepository.findById(assetId);
         if (assetToAssign.isPresent()) {
             Asset asset = assetToAssign.get();
@@ -49,4 +53,13 @@ public class AssetService {
         asset.setAssetState(newState);
         return assetRepository.save(asset);
     }
+
+    @Transactional
+public Asset updateAssetForUnassignment(String assetId) {
+    Asset asset = assetRepository.findById(assetId)
+            .orElseThrow(() -> new RuntimeException("Asset not found with id " + assetId));
+    asset.setAssetState(AssetState.Unassigned);
+    asset.setPersonId(null);  // Setze die personId auf null
+    return assetRepository.save(asset);
+}
 }

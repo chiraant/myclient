@@ -36,10 +36,11 @@ public class AssetController {
     public ResponseEntity<Asset> assignAsset(@PathVariable String id) {
         return ResponseEntity.ok(assetService.updateAssetState(id, AssetState.Assigned));
     }
+
     @PutMapping("/asset/{id}/unassign")
     public ResponseEntity<Asset> unassignAsset(@PathVariable String id) {
-        return ResponseEntity.ok(assetService.updateAssetState(id, AssetState.Unassigned));
-    }
+    return ResponseEntity.ok(assetService.updateAssetForUnassignment(id));
+}
 
     @PutMapping("/asset/{id}/repair")
     public ResponseEntity<Asset> setAssetToRepair(@PathVariable String id) {

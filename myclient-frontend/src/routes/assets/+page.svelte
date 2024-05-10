@@ -51,7 +51,17 @@
       console.log(error);
     });
   }
-
+  function unassignAsset(assetId) {
+    axios.put(`${api_root}/api/asset/${assetId}/unassign`)
+      .then(response => {
+        alert("Asset unassigned");
+        getAssets();  // Aktualisiere die Asset-Liste
+      })
+      .catch(error => {
+        alert("Failed to unassign asset");
+        console.log(error);
+      });
+  }
 
 </script>
 
@@ -115,7 +125,17 @@
         <td>{asset.purchaseDate}</td>
         <td>{asset.guaranteeEnd}</td>
         <td>{asset.personId}</td>
-        <td><button type="button" class="btn btn-primary">Assign</button></td>
+        <td>
+          <button type="button" class="btn btn-primary">Edit</button>
+        </td>
+        <td>
+          <button type="button"
+                  class="btn {asset.assetState === 'Assigned' ? 'btn-primary' : 'btn-secondary'}"
+                  on:click={asset.assetState === 'Assigned' ? () => unassignAsset(asset.id) : null}
+                  disabled={asset.assetState !== 'Assigned'}>
+            Unassign
+          </button>
+        </td>
       </tr>
     {/each}
   </tbody>

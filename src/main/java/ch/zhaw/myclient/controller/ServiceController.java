@@ -25,7 +25,7 @@ public class ServiceController {
     public ResponseEntity<Asset> assignAsset(@RequestBody AssetStateChangeDTO changeS) {
         String personEmail = changeS.getPersonEmail();
         String assetId = changeS.getAssetId();
-        Optional<Asset> asset = assetService.assignasset(assetId, personEmail);
+        Optional<Asset> asset = assetService.assignAsset(assetId, personEmail);
         if (asset.isPresent()) {
             return new ResponseEntity<>(asset.get(), HttpStatus.OK); 
         }
