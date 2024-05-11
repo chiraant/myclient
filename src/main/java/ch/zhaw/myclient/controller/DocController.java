@@ -34,6 +34,7 @@ public class DocController {
     public ResponseEntity<Doc> guaranteeDoc(@PathVariable String id) {
         return ResponseEntity.ok(docService.updateDocType(id, DocType.Guarantee));
     }
+
     @PutMapping("/doc/{id}/offer")
     public ResponseEntity<Doc> offerDoc(@PathVariable String id) {
         return ResponseEntity.ok(docService.updateDocType(id, DocType.Offer));
@@ -48,14 +49,20 @@ public class DocController {
     public ResponseEntity<Doc> orderDoc(@PathVariable String id) {
         return ResponseEntity.ok(docService.updateDocType(id, DocType.Order));
     }
+
     @PutMapping("/doc/{id}/other")
     public ResponseEntity<Doc> otherDoc(@PathVariable String id) {
         return ResponseEntity.ok(docService.updateDocType(id, DocType.Other));
     }
-
-
-
-
+    @PutMapping("/doc/{id}/type/{type}")
+public ResponseEntity<Doc> updateDocType(@PathVariable String id, @PathVariable String type) {
+    try {
+        DocType docType = DocType.valueOf(type.toUpperCase());
+        return ResponseEntity.ok(docService.updateDocType(id, docType));
+    } catch (IllegalArgumentException e) {
+        return ResponseEntity.badRequest().body(null); // Handle the case where the type is invalid
+    }
+}
 
 
     @Autowired
@@ -64,7 +71,7 @@ public class DocController {
     @PostMapping("/doc")
     public ResponseEntity<Doc> createDoc(
             @RequestBody DocCreateDTO dDTO) {
-        Doc dDAO = new Doc(dDTO.getDocTitle(), dDTO.getUploadDate());
+        Doc dDAO = new Doc(dDTO.getDocTitle(), dDTO.getUploadDate(), dDTO.getDocType());
         Doc d = docRepository.save(dDAO);
 
         return new ResponseEntity<>(d, HttpStatus.CREATED);

@@ -114,7 +114,7 @@
 <form class="mb-5">
   <div class="row mb-3">
     <div class="col">
-      <label class="form-label" for="assetName">Asset</label>
+      <label class="form-label" for="assetName">Asset name</label>
       <input
         bind:value={asset.assetName}
         class="form-control"
@@ -135,7 +135,7 @@
     </div>
 
     <div class="col">
-      <label class="form-label" for="earnings">guaranteeEnd</label>
+      <label class="form-label" for="earnings">Guarantee End</label>
       <input
         bind:value={asset.guaranteeEnd}
         class="form-control"
@@ -169,7 +169,9 @@
         <td>{asset.assetState}</td>
         <td>{asset.purchaseDate}</td>
         <td>{asset.guaranteeEnd}</td>
-        <td>{asset.personId}</td>
+        <td>
+          {persons.find(person => person.id === asset.personId) ? persons.find(person => person.id === asset.personId).email : 'Not Assinged'}
+        </td>
         <td>
           {#if asset.assetState === 'Unassigned'}
             <select bind:value={selectedEmails[asset.id]}>

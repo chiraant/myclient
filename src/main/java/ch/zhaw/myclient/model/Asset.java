@@ -25,4 +25,5 @@ public class Asset {
     private String guaranteeEnd;
     private AssetState assetState = AssetState.Unassigned;
     private String personId;
+    private String personEmail;
 }
