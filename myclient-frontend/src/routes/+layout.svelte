@@ -32,7 +32,7 @@
             <a class="nav-link" href="/docs">MyDocuments</a>
           </li>
         {/if}
-        {#if $isAuthenticated}
+        {#if $isAuthenticated && $user.user_roles && $user.user_roles.includes("admin") } 
           <li class="nav-item">
             <a class="nav-link" href="/persons">MyPersons</a>
           </li>
