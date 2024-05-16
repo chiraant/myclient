@@ -2,6 +2,8 @@
     import axios from "axios";
     import { page } from "$app/stores";
     import { onMount } from "svelte";
+    import { jwt_token} from "../../store";
+    import { isAuthenticated, user } from "../../store";
 
     // TODO: setze hier die URL zu deinem mit Postman erstellten Mock-Server ein
     const api_root = $page.url.origin;
@@ -21,7 +23,10 @@
         var config = {
             method: "get",
             url: api_root + "/api/person",
-            headers: {},
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: "Bearer "+$jwt_token,
+            }
         };
 
         axios(config)
@@ -40,8 +45,9 @@
             url: api_root + "/api/person",
             headers: {
                 "Content-Type": "application/json",
-            },
-            data: person,
+                Authorization: "Bearer "+$jwt_token},
+            
+            data: person
         };
 
         axios(config)

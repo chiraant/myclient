@@ -2,6 +2,8 @@
   import axios from "axios";
   import { onMount } from "svelte";
   import { page } from "$app/stores";
+  import { jwt_token} from "../../store";
+  import { isAuthenticated, user } from "../../store";
 
   const api_root = $page.url.origin;
   let docs = [];
@@ -17,7 +19,12 @@
   });
 
   function getDocs() {
-    axios.get(api_root + "/api/doc")
+    axios.get(api_root + "/api/doc", {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer "+$jwt_token,
+      }
+    })
       .then(response => {
         docs = response.data;
       })
@@ -29,7 +36,10 @@
 
   function createDoc() {
     axios.post(api_root + "/api/doc", doc, {
-      headers: { "Content-Type": "application/json" }
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer "+$jwt_token,
+      }
     })
     .then(response => {
       alert("Document created");
@@ -43,7 +53,12 @@
  
   async function updateDocType(docId, newType) {
     try {
-      await axios.put(`${api_root}/api/doc/${docId}/type/${newType.toLowerCase()}`);
+      await axios.put(`${api_root}/api/doc/${docId}/type/${newType.toLowerCase()}`, {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Bearer "+$jwt_token,
+        }
+      });
       alert(`Document type updated to ${newType}`);
       getDocs(); // Refresh the document list
     } catch (error) {
@@ -52,7 +67,7 @@
     }
   }
 </script>
-
+{#if $isAuthenticated && $user.user_roles && $user.user_roles.includes("admin") } 
 <h1 class="mt-3">Create Document</h1>
 <form class="mb-5">
   <div class="row mb-3">
@@ -76,7 +91,7 @@
   </div>
   <button type="button" on:click={createDoc} class="btn btn-primary">Submit</button>
 </form>
-
+{/if}
 
 <h1>All Documents</h1>
 <table class="table">

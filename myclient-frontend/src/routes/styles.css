@@ -1,1 +1,57 @@
-/* In dieser Datei können globale Styles definiert werden */
+body {
+  background-color: #e7f1ff; /* Sehr helles Blau für den Hintergrund */
+  color: #0056b3; /* Dunkleres Blau für Schriften */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.form-control, .btn, select {
+  background-color: #ffffff; /* Weißer Hintergrund für Formularelemente */
+  border: 1px solid #007bff; /* Hellblaue Umrandung */
+  color: #0056b3;
+}
+
+.btn-primary {
+  background-color: #007bff; /* Hellblau für Buttons */
+  border-color: #0069d9;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Dunkleres Blau beim Hover */
+  border-color: #004795;
+}
+
+.btn-warning {
+  background-color: #ffc107; /* Gelb für Warnungen */
+  color: black;
+}
+
+.btn-info {
+  background-color: #17a2b8; /* Cyan für Info-Buttons */
+  color: white;
+}
+
+.btn-success {
+  background-color: #28a745; /* Grün für Erfolg */
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Rot für Gefahr/Entsorgen */
+  color: white;
+}
+
+table {
+  background-color: #ffffff; /* Weißer Hintergrund für Tabellen */
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: auto;
+  border: 1px solid #dee2e6; /* Sehr helles Grau für Trennlinien */
+}
+
+thead {
+  background-color: #007bff; /* Hellblau für Kopfzeilen der Tabelle */
+  color: white;
+}
