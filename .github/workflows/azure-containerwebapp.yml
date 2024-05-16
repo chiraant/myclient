@@ -3,6 +3,8 @@ env:
  AZURE_WEBAPP_NAME: myclient-chiraant
 on:
   push: # Stellen Sie sicher, dass nach "push:" nichts kommt oder dass es korrekt strukturiert ist, falls Sie spezifische Branches einbeziehen möchten.
+   branches:
+    -main
 
 permissions:
   contents: read
