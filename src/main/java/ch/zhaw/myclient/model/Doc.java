@@ -24,4 +24,6 @@ public class Doc {
     private String uploadDate;
     @NonNull
     private DocType docType;
+    @NonNull
+    private String userEmail;
 }

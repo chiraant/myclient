@@ -37,6 +37,11 @@
             <a class="nav-link" href="/persons">MyPersons</a>
           </li>
         {/if}
+        {#if $isAuthenticated}
+          <li class="nav-item">
+            <a class="nav-link" href="/account">MyAccount</a>
+          </li>
+        {/if}
       </ul>
       <div class="d-flex">
         {#if $isAuthenticated}

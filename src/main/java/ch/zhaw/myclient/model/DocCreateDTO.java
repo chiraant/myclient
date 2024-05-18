@@ -10,4 +10,5 @@ public class DocCreateDTO {
     private String docTitle;
     private String uploadDate;
     private DocType docType;
+    private String userEmail;
 }

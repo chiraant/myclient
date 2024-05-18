@@ -71,7 +71,7 @@ public ResponseEntity<Doc> updateDocType(@PathVariable String id, @PathVariable 
     @PostMapping("/doc")
     public ResponseEntity<Doc> createDoc(
             @RequestBody DocCreateDTO dDTO) {
-        Doc dDAO = new Doc(dDTO.getDocTitle(), dDTO.getUploadDate(), dDTO.getDocType());
+        Doc dDAO = new Doc(dDTO.getDocTitle(), dDTO.getUploadDate(), dDTO.getDocType(), dDTO.getUserEmail());
         Doc d = docRepository.save(dDAO);
 
         return new ResponseEntity<>(d, HttpStatus.CREATED);
