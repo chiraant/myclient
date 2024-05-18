@@ -2,7 +2,7 @@
     import axios from "axios";
     import { page } from "$app/stores";
     import { onMount } from "svelte";
-    import { jwt_token} from "../../store";
+    import { jwt_token } from "../../store";
     import { isAuthenticated, user } from "../../store";
 
     // TODO: setze hier die URL zu deinem mit Postman erstellten Mock-Server ein
@@ -25,8 +25,8 @@
             url: api_root + "/api/person",
             headers: {
                 "Content-Type": "application/json",
-                Authorization: "Bearer "+$jwt_token,
-            }
+                Authorization: "Bearer " + $jwt_token,
+            },
         };
 
         axios(config)
@@ -38,16 +38,40 @@
                 console.log(error);
             });
     }
-
+    function validateEmailAndcreatePerson() {
+        var config = {
+            method: "get",
+            url: "https://disify.com/api/email/" + person.email,
+        };
+        axios(config)
+            .then(function (response) {
+                console.log("Validated email " + person.email);
+                console.log(response.data);
+                if (
+                    response.data.format &&
+                    !response.data.disposable &&
+                    response.data.dns
+                ) {
+                    createPerson();
+                } else {
+                    alert("Email " + person.email + " is not valid.");
+                }
+            })
+            .catch(function (error) {
+                alert("Could not validate email");
+                console.log(error);
+            });
+    }
     function createPerson() {
         var config = {
             method: "post",
             url: api_root + "/api/person",
             headers: {
                 "Content-Type": "application/json",
-                Authorization: "Bearer "+$jwt_token},
-            
-            data: person
+                Authorization: "Bearer " + $jwt_token,
+            },
+
+            data: person,
         };
 
         axios(config)
@@ -94,8 +118,10 @@
         </div>
     </div>
     <br />
-    <button type="button" class="btn btn-primary" on:click={createPerson}
-        >Submit</button
+    <button
+        type="button"
+        class="btn btn-primary"
+        on:click={validateEmailAndcreatePerson}>Submit</button
     >
 </form>
 

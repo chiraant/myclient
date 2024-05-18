@@ -16,30 +16,34 @@ import org.springframework.web.bind.annotation.RestController;
 import ch.zhaw.myclient.model.Person;
 import ch.zhaw.myclient.model.PersonCreateDTO;
 import ch.zhaw.myclient.repositories.PersonRepository;
+import ch.zhaw.myclient.service.MailValidatorService;
+
 @RestController
 @RequestMapping("/api")
 
 public class PersonController {
+    @Autowired
+    MailValidatorService mailValidatorService;
 
     @Autowired
     PersonRepository personRepository;
 
-
     @PostMapping("/person")
     public ResponseEntity<Person> createPerson(
             @RequestBody PersonCreateDTO pDTO) {
-                Person pDAO = new Person(pDTO.getFirstName(), pDTO.getLastName(), pDTO.getEmail());
-                Person p = personRepository.save(pDAO);
+        Person pDAO = new Person(pDTO.getFirstName(), pDTO.getLastName(), pDTO.getEmail());
+        Person p = personRepository.save(pDAO);
 
         return new ResponseEntity<>(p, HttpStatus.CREATED);
     }
+    
+   
 
     @GetMapping("/person")
     public ResponseEntity<List<Person>> getAllPerson() {
         List<Person> allPerson = personRepository.findAll();
         return new ResponseEntity<>(allPerson, HttpStatus.OK);
     }
-
 
     @GetMapping("/person/{id}")
     public ResponseEntity<Person> getPersonById(@PathVariable String id) {
