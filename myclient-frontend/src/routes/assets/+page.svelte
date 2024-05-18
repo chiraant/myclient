@@ -261,7 +261,7 @@
     >
   </form>
 {:else if $isAuthenticated}
-  <!-- Nachrichtenformular für nicht-Admin-Benutzer -->
+  <!-- Nachrichtenformular für nicht-Admin-Benutzer-->
   <button class="accordion-button" on:click={toggleMessageBox}>
     {isMessageBoxOpen ? 'Hide Message Form' : 'Send a Message to the Administrator'}
   </button>
