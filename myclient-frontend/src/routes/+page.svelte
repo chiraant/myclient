@@ -1,4 +1,6 @@
 <script>
+    import { onMount } from "svelte";
+    import axios from "axios";
     import { isAuthenticated } from "../store";
     import auth from "../auth.service";
 
@@ -14,7 +16,9 @@
         }
         loginForm.classList.add("was-validated");
     }
+  
 </script>
+
 
 {#if $isAuthenticated}
     <h1>This is MyClient</h1>
