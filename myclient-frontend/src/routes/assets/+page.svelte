@@ -263,7 +263,7 @@
 {:else if $isAuthenticated}
   <!-- Nachrichtenformular für nicht-Admin-Benutzer-->
   <button class="accordion-button" on:click={toggleMessageBox}>
-    {isMessageBoxOpen ? 'Hide Message Form' : 'Send a Message to the Administrator'}
+    {isMessageBoxOpen ? 'Hide Message Form' : 'Send a message or a demand to the Administrator'}
   </button>
   <div class={isMessageBoxOpen ? 'user-message-form active' : 'user-message-form'}>
     <textarea class="message-textarea" bind:value={message} placeholder="Write your message here for the administrator" rows="4"></textarea>
