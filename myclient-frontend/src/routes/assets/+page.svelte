@@ -7,7 +7,7 @@
   import auth from "../../auth.service";
 
   const api_root = $page.url.origin;
-  
+
   let currentPage;
   let nrOfPages = 0;
   let defaultPageSize = 10;
@@ -43,8 +43,7 @@
   });
 
   function getAssets() {
-    let query =
-      "?pageSize=" + defaultPageSize + "&pageNumber=" + (currentPage - 1);
+    let query = `?pageSize=${defaultPageSize}&pageNumber=${currentPage - 1}`;
 
     // If a state is selected, add it to the query parameters
     if (assetState) {
@@ -201,21 +200,25 @@
     const emailData = {
       to: "chiraant@students.zhaw.ch",
       subject: "Message from User",
-      message: message
+      message: message,
     };
-    axios.post(`${api_root}/api/send-email`, emailData, {
-      headers: { "Content-Type": "application/json", Authorization: "Bearer " + $jwt_token }
-    })
-    .then(() => {
-      alert("Message sent successfully!");
-      message = '';  // Nachricht zurücksetzen
-      toggleMessageBox();  // Nachrichtenbox schließen
-    })
-    .catch(error => {
-      console.error("Failed to send message:", error);
-      alert("Failed to send message.");
-    });
-  } 
+    axios
+      .post(`${api_root}/api/send-email`, emailData, {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Bearer " + $jwt_token,
+        },
+      })
+      .then(() => {
+        alert("Message sent successfully!");
+        message = ""; // Nachricht zurücksetzen
+        toggleMessageBox(); // Nachrichtenbox schließen
+      })
+      .catch((error) => {
+        console.error("Failed to send message:", error);
+        alert("Failed to send message.");
+      });
+  }
   function toggleMessageBox() {
     isMessageBoxOpen = !isMessageBoxOpen;
   }
@@ -263,10 +266,19 @@
 {:else if $isAuthenticated}
   <!-- Nachrichtenformular für nicht-Admin-Benutzer-->
   <button class="accordion-button" on:click={toggleMessageBox}>
-    {isMessageBoxOpen ? 'Hide Message Form' : 'Send a message or a demand to the Administrator'}
+    {isMessageBoxOpen
+      ? "Hide Message Form"
+      : "Send a message or a demand to the Administrator"}
   </button>
-  <div class={isMessageBoxOpen ? 'user-message-form active' : 'user-message-form'}>
-    <textarea class="message-textarea" bind:value={message} placeholder="Write your message here for the administrator" rows="4"></textarea>
+  <div
+    class={isMessageBoxOpen ? "user-message-form active" : "user-message-form"}
+  >
+    <textarea
+      class="message-textarea"
+      bind:value={message}
+      placeholder="Write your message here for the administrator"
+      rows="4"
+    ></textarea>
     <button on:click={sendMessage}>Send Message</button>
   </div>
 {/if}
@@ -276,12 +288,7 @@
     <label for="assetState" class="col-form-label">Asset State: </label>
   </div>
   <div class="col-3">
-    <select
-      bind:value={assetState}
-      class="form-select"
-      id="assetState"
-      type="text"
-    >
+    <select bind:value={assetState} class="form-select" id="state" type="text">
       <option value="ALL">All</option>
       <option value="ASSIGNED">Assigned</option>
       <option value="UNASSIGNED">Unassigned</option>
@@ -293,8 +300,7 @@
     <a
       class="btn btn-primary"
       href={"/assets?page=1&assetState=" + assetState}
-      role="button">Apply</a
-    >
+      role="button">Apply</a>
   </div>
 </div>
 
@@ -412,6 +418,7 @@
     {/each}
   </ul>
 </nav>
+
 <style>
   .accordion-button {
     cursor: pointer;

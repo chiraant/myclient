@@ -110,10 +110,10 @@ public ResponseEntity<Page<Asset>> getAllAsset(
     PageRequest pageRequest = PageRequest.of(pageNumber, pageSize, sort);
 
     Page<Asset> assets;
-    if (assetState  != null) {
-        assets = assetRepository.findByAssetState(assetState, pageRequest);
-    } else {
+    if (assetState  == null) {
         assets = assetRepository.findAll(pageRequest);
+    } else {
+        assets = assetRepository.findByAssetState(assetState, pageRequest);
     }
 
     return ResponseEntity.ok(assets);

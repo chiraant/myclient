@@ -54,15 +54,7 @@ public class DocController {
     public ResponseEntity<Doc> otherDoc(@PathVariable String id) {
         return ResponseEntity.ok(docService.updateDocType(id, DocType.Other));
     }
-    @PutMapping("/doc/{id}/type/{type}")
-public ResponseEntity<Doc> updateDocType(@PathVariable String id, @PathVariable String type) {
-    try {
-        DocType docType = DocType.valueOf(type.toUpperCase());
-        return ResponseEntity.ok(docService.updateDocType(id, docType));
-    } catch (IllegalArgumentException e) {
-        return ResponseEntity.badRequest().body(null); // Handle the case where the type is invalid
-    }
-}
+    
 
 
     @Autowired
