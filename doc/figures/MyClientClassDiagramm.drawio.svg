@@ -1,0 +1,653 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="2412px" height="1762px" viewBox="-0.5 -0.5 2412 1762" content="&lt;mxfile&gt;&lt;diagram id=&quot;KNvPReSEDNOwiSWm57rH&quot; name=&quot;Page-1&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <path d="M 871 551 L 871 518 Q 871 491 844 491 L 688 491 Q 661 491 661 518 L 661 551" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 661 551 L 661 594 Q 661 621 688 621 L 844 621 Q 871 621 871 594 L 871 551" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 661 551 L 871 551" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="765.5" y="518">
+                &lt;&lt;enumeration&gt;&gt;
+            </text>
+            <text x="765.5" y="535">
+                AssetState
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="666.5" y="568.5">
+                + Unassigned
+            </text>
+            <text x="666.5" y="582.5">
+                + Assigned
+            </text>
+            <text x="666.5" y="596.5">
+                + InRepair
+            </text>
+            <text x="666.5" y="610.5">
+                + Disposed
+            </text>
+        </g>
+        <path d="M 941 831 L 941 814.5 Q 941 801 927.5 801 L 624.5 801 Q 611 801 611 814.5 L 611 831" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 611 831 L 611 937.5 Q 611 951 624.5 951 L 927.5 951 Q 941 951 941 937.5 L 941 831" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 611 831 L 941 831" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="775.5" y="821.5">
+                AssetCreateDTO
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="616.5" y="848.5">
+                - assetName: String
+            </text>
+            <text x="616.5" y="862.5">
+                - purchaseDate: String
+            </text>
+            <text x="616.5" y="876.5">
+                - guaranteeDate: String
+            </text>
+            <text x="616.5" y="890.5">
+                - assetState: AssetState
+            </text>
+            <text x="616.5" y="932.5">
+                + Getter
+            </text>
+        </g>
+        <path d="M 951 251 L 951 234.5 Q 951 221 937.5 221 L 634.5 221 Q 621 221 621 234.5 L 621 251" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 621 251 L 621 427.5 Q 621 441 634.5 441 L 937.5 441 Q 951 441 951 427.5 L 951 251" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 621 251 L 951 251" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="785.5" y="241.5">
+                Asset
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="626.5" y="268.5">
+                - id: String
+            </text>
+            <text x="626.5" y="282.5">
+                - assetName: String
+            </text>
+            <text x="626.5" y="296.5">
+                - purchaseDate: String
+            </text>
+            <text x="626.5" y="310.5">
+                - guaranteeDate: String
+            </text>
+            <text x="626.5" y="324.5">
+                - assetState: AssetState
+            </text>
+            <text x="626.5" y="338.5">
+                - personId: String
+            </text>
+            <text x="626.5" y="352.5">
+                - personEmail: String
+            </text>
+            <text x="626.5" y="394.5">
+                + Asset(assetName, purchaseDate, guaranteeDate)
+            </text>
+            <text x="626.5" y="408.5">
+                + Getter
+            </text>
+            <text x="626.5" y="422.5">
+                + Setter
+            </text>
+        </g>
+        <path d="M 941 661 L 941 644.5 Q 941 631 927.5 631 L 625.5 631 Q 612 631 612 644.5 L 612 661" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 612 661 L 612 747.5 Q 612 761 625.5 761 L 927.5 761 Q 941 761 941 747.5 L 941 661" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 612 661 L 941 661" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="776" y="651.5">
+                AssetStateChangeDTO
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="617.5" y="678.5">
+                - id :String
+            </text>
+            <text x="617.5" y="692.5">
+                - assetName: String
+            </text>
+            <text x="617.5" y="706.5">
+                - personMail: String
+            </text>
+            <text x="617.5" y="748.5">
+                + Getter
+            </text>
+        </g>
+        <path d="M 1852 831 L 1852 814.5 Q 1852 801 1838.5 801 L 1605.5 801 Q 1592 801 1592 814.5 L 1592 831" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1592 831 L 1592 947.5 Q 1592 961 1605.5 961 L 1838.5 961 Q 1852 961 1852 947.5 L 1852 831" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1592 831 L 1852 831" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="1721.5" y="821.5">
+                DocCreateDTO
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="1597.5" y="848.5">
+                - docTitle: String
+            </text>
+            <text x="1597.5" y="862.5">
+                - uploadDate: String
+            </text>
+            <text x="1597.5" y="876.5">
+                - userEmail: String
+            </text>
+            <text x="1597.5" y="890.5">
+                - docType: DocType
+            </text>
+            <text x="1597.5" y="932.5">
+                + Getter
+            </text>
+            <text x="1597.5" y="946.5">
+                + Setter
+            </text>
+        </g>
+        <path d="M 1841 251 L 1841 234.5 Q 1841 221 1827.5 221 L 1524.5 221 Q 1511 221 1511 234.5 L 1511 251" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1511 251 L 1511 397.5 Q 1511 411 1524.5 411 L 1827.5 411 Q 1841 411 1841 397.5 L 1841 251" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1511 251 L 1841 251" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="1675.5" y="241.5">
+                Doc
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="1516.5" y="268.5">
+                - id: String
+            </text>
+            <text x="1516.5" y="282.5">
+                - docTitle: String
+            </text>
+            <text x="1516.5" y="296.5">
+                - uploadDate: String
+            </text>
+            <text x="1516.5" y="310.5">
+                - userEmail: String
+            </text>
+            <text x="1516.5" y="324.5">
+                - docType: DocType
+            </text>
+            <text x="1516.5" y="366.5">
+                + Doc(docTitle, uploadDate, userEmail, docType)
+            </text>
+            <text x="1516.5" y="380.5">
+                + Getter
+            </text>
+            <text x="1516.5" y="394.5">
+                + Setter
+            </text>
+        </g>
+        <path d="M 1821 491 L 1821 458 Q 1821 431 1794 431 L 1628 431 Q 1601 431 1601 458 L 1601 491" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1601 491 L 1601 564 Q 1601 591 1628 591 L 1794 591 Q 1821 591 1821 564 L 1821 491" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1601 491 L 1821 491" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="1710.5" y="458">
+                &lt;&lt;enumeration&gt;&gt;
+            </text>
+            <text x="1710.5" y="475">
+                DocType
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="1606.5" y="508.5">
+                + Order
+            </text>
+            <text x="1606.5" y="522.5">
+                + Other
+            </text>
+            <text x="1606.5" y="536.5">
+                + Invoice
+            </text>
+            <text x="1606.5" y="550.5">
+                + Offer
+            </text>
+            <text x="1606.5" y="564.5">
+                + Guarantee
+            </text>
+        </g>
+        <path d="M 1851 661 L 1851 644.5 Q 1851 631 1837.5 631 L 1605.5 631 Q 1592 631 1592 644.5 L 1592 661" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1592 661 L 1592 727.5 Q 1592 741 1605.5 741 L 1837.5 741 Q 1851 741 1851 727.5 L 1851 661" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1592 661 L 1851 661" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="1721" y="651.5">
+                DocTypeChangeDTO
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="1597.5" y="678.5">
+                - docId: String
+            </text>
+            <text x="1597.5" y="692.5">
+                - title: String
+            </text>
+            <text x="1597.5" y="734.5">
+                + Getter
+            </text>
+        </g>
+        <path d="M 511 241 L 511 224.5 Q 511 211 497.5 211 L 184.5 211 Q 171 211 171 224.5 L 171 241" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 171 241 L 171 417.5 Q 171 431 184.5 431 L 497.5 431 Q 511 431 511 417.5 L 511 241" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 171 241 L 511 241" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="340.5" y="231.5">
+                MailInformation
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="176.5" y="258.5">
+                - format: boolean
+            </text>
+            <text x="176.5" y="272.5">
+                - alias: boolean
+            </text>
+            <text x="176.5" y="286.5">
+                - domain: String
+            </text>
+            <text x="176.5" y="300.5">
+                - disposable: boolean
+            </text>
+            <text x="176.5" y="314.5">
+                - dns: boolean
+            </text>
+            <text x="176.5" y="356.5">
+                +MailInformation(format, alias, domain, disposable, dns)
+            </text>
+            <text x="176.5" y="370.5">
+                + Getter
+            </text>
+        </g>
+        <path d="M 501 521 L 501 504.5 Q 501 491 487.5 491 L 189.5 491 Q 176 491 176 504.5 L 176 521" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 176 521 L 176 647.5 Q 176 661 189.5 661 L 487.5 661 Q 501 661 501 647.5 L 501 521" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 176 521 L 501 521" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="338" y="511.5">
+                Mail
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="181.5" y="538.5">
+                - to: String
+            </text>
+            <text x="181.5" y="552.5">
+                - subject: String
+            </text>
+            <text x="181.5" y="566.5">
+                - message: String
+            </text>
+            <text x="181.5" y="608.5">
+                +Mail(to, subject, message)
+            </text>
+            <text x="181.5" y="622.5">
+                + Getter
+            </text>
+            <text x="181.5" y="636.5">
+                + Setter
+            </text>
+        </g>
+        <path d="M 1412 251 L 1412 234.5 Q 1412 221 1398.5 221 L 1095.5 221 Q 1082 221 1082 234.5 L 1082 251" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1082 251 L 1082 397.5 Q 1082 411 1095.5 411 L 1398.5 411 Q 1412 411 1412 397.5 L 1412 251" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1082 251 L 1412 251" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="1246.5" y="241.5">
+                Person
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="1087.5" y="268.5">
+                - id: String
+            </text>
+            <text x="1087.5" y="282.5">
+                - firstName: String
+            </text>
+            <text x="1087.5" y="296.5">
+                - lastName: String
+            </text>
+            <text x="1087.5" y="310.5">
+                - email: String
+            </text>
+            <text x="1087.5" y="352.5">
+                + Person(firstName, lastName, email)
+            </text>
+            <text x="1087.5" y="366.5">
+                + Getter
+            </text>
+            <text x="1087.5" y="380.5">
+                + Setter
+            </text>
+        </g>
+        <path d="M 1391 491 L 1391 474.5 Q 1391 461 1377.5 461 L 1114.5 461 Q 1101 461 1101 474.5 L 1101 491" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1101 491 L 1101 577.5 Q 1101 591 1114.5 591 L 1377.5 591 Q 1391 591 1391 577.5 L 1391 491" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1101 491 L 1391 491" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="1245.5" y="481.5">
+                PersonCreateDTO
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="1106.5" y="508.5">
+                - firstName: String
+            </text>
+            <text x="1106.5" y="522.5">
+                - lastName: String
+            </text>
+            <text x="1106.5" y="536.5">
+                - email: String
+            </text>
+            <text x="1106.5" y="578.5">
+                + Getter
+            </text>
+        </g>
+        <path d="M 1082 331 L 1062 331 Q 1052 331 1042.22 333.07 L 990.78 343.93 Q 981 346 971 346 L 951 346" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <ellipse cx="963" cy="346" rx="3" ry="3" fill="#ffffff" stroke="rgb(0, 0, 0)" pointer-events="none"/>
+        <path d="M 951 350 L 959 346 L 951 342" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1412 331 L 1432 331 Q 1442 331 1452 331 L 1471 331 Q 1481 331 1491 331 L 1511 331" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1503 335 L 1503 327 M 1511 327 L 1503 331 L 1511 335" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 961 31 L 961 14.5 Q 961 1 947.5 1 L 644.5 1 Q 631 1 631 14.5 L 631 31" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 631 31 L 631 107.5 Q 631 121 644.5 121 L 947.5 121 Q 961 121 961 107.5 L 961 31" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 631 31 L 961 31" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="795.5" y="21.5">
+                SecurityConfig
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="636.5" y="48.5">
+                + securityFilterChain(http: HttpSecurity): SecurityFilterChain
+            </text>
+        </g>
+        <path d="M 806 1191 L 806 1174.5 Q 806 1161 792.5 1161 L 14.5 1161 Q 1 1161 1 1174.5 L 1 1191" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1 1191 L 1 1327.5 Q 1 1341 14.5 1341 L 792.5 1341 Q 806 1341 806 1327.5 L 806 1191" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1 1191 L 806 1191" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="403" y="1181.5">
+                AssetController
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="6.5" y="1208.5">
+                - assetService: AssetService
+            </text>
+            <text x="6.5" y="1236.5">
+                + assignAsset(id: String, jwt: Jwt): ResponseEntity&lt;Asset&gt;
+            </text>
+            <text x="6.5" y="1250.5">
+                + unassignAsset(id: String, jwt: Jwt): ResponseEntity&lt;Asset&gt;
+            </text>
+            <text x="6.5" y="1264.5">
+                + ToRepairAsset(id: String, jwt: Jwt): ResponseEntity&lt;Asset&gt;
+            </text>
+            <text x="6.5" y="1278.5">
+                + RepairedAsset(id: String, jwt: Jwt): ResponseEntity&lt;Asset&gt;
+            </text>
+            <text x="6.5" y="1292.5">
+                + disposeAsset(id: String, jwt: Jwt): ResponseEntity&lt;Asset&gt;
+            </text>
+            <text x="6.5" y="1306.5">
+                + createAsset(aDTO: AssetCreateDTO, jwt: Jwt): ResponseEntity&lt;Asset&gt;
+            </text>
+            <text x="6.5" y="1320.5">
+                + getAllAsset(assetName: String, personEmail: String, assetState: AssetState, pageNumber: int, pageSize: int): ResponseEntity&lt;Page&lt;Asset&gt;&gt;
+            </text>
+            <text x="6.5" y="1334.5">
+                + getAssetById(id: String): ResponseEntity&lt;Asset&gt;
+            </text>
+        </g>
+        <path d="M 401 1411 L 401 1394.5 Q 401 1381 387.5 1381 L 14.5 1381 Q 1 1381 1 1394.5 L 1 1411" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1 1411 L 1 1587.5 Q 1 1601 14.5 1601 L 387.5 1601 Q 401 1601 401 1587.5 L 401 1411" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1 1411 L 401 1411" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="200.5" y="1401.5">
+                DocController
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="6.5" y="1428.5">
+                - docService: DocService
+            </text>
+            <text x="6.5" y="1470.5">
+                + guaranteeDoc(id: String): ResponseEntity&lt;Doc&gt;
+            </text>
+            <text x="6.5" y="1484.5">
+                + offerDoc(id: String): ResponseEntity&lt;Doc&gt;
+            </text>
+            <text x="6.5" y="1498.5">
+                + invoiceDoc(id: String): ResponseEntity&lt;Doc&gt;
+            </text>
+            <text x="6.5" y="1512.5">
+                + orderDoc(id: String): ResponseEntity&lt;Doc&gt;
+            </text>
+            <text x="6.5" y="1526.5">
+                + otherDoc(id: String): ResponseEntity&lt;Doc&gt;
+            </text>
+            <text x="6.5" y="1540.5">
+                + createDoc(dDTO: DocCreateDTO): ResponseEntity&lt;Doc&gt;
+            </text>
+            <text x="6.5" y="1554.5">
+                + getAllDoc(): ResponseEntity&lt;List&lt;Doc&gt;&gt;
+            </text>
+            <text x="6.5" y="1568.5">
+                + getDocById(id: String): ResponseEntity&lt;Doc&gt;
+            </text>
+        </g>
+        <path d="M 281 1661 L 281 1644.5 Q 281 1631 267.5 1631 L 34.5 1631 Q 21 1631 21 1644.5 L 21 1661" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 21 1661 L 21 1747.5 Q 21 1761 34.5 1761 L 267.5 1761 Q 281 1761 281 1747.5 L 281 1661" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 21 1661 L 281 1661" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="150.5" y="1651.5">
+                MailController
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="26.5" y="1678.5">
+                - mailService: MailService
+            </text>
+            <text x="26.5" y="1720.5">
+                + sendEmail(mail: Mail): ResponseEntity&lt;?&gt;
+            </text>
+        </g>
+        <path d="M 841 1411 L 841 1394.5 Q 841 1381 827.5 1381 L 464.5 1381 Q 451 1381 451 1394.5 L 451 1411" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 451 1411 L 451 1537.5 Q 451 1551 464.5 1551 L 827.5 1551 Q 841 1551 841 1537.5 L 841 1411" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 451 1411 L 841 1411" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="645.5" y="1401.5">
+                PersonController
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="456.5" y="1428.5">
+                - mailValidatorService: MailValidatorService
+            </text>
+            <text x="456.5" y="1442.5">
+                - personRepository: PersonRepository
+            </text>
+            <text x="456.5" y="1470.5">
+                + createPerson(pDTO: PersonCreateDTO): ResponseEntity&lt;Person&gt;
+            </text>
+            <text x="456.5" y="1484.5">
+                + getAllPerson(): ResponseEntity&lt;List&lt;Person&gt;&gt;
+            </text>
+            <text x="456.5" y="1498.5">
+                + getPersonById(id: String): ResponseEntity&lt;Person&gt;
+            </text>
+            <text x="456.5" y="1512.5">
+                + deletePerson(id: String): ResponseEntity&lt;Void&gt;
+            </text>
+        </g>
+        <path d="M 841 1661 L 841 1644.5 Q 841 1631 827.5 1631 L 435.5 1631 Q 422 1631 422 1644.5 L 422 1661" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 422 1661 L 422 1727.5 Q 422 1741 435.5 1741 L 827.5 1741 Q 841 1741 841 1727.5 L 841 1661" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 422 1661 L 841 1661" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="631" y="1651.5">
+                ServiceController
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="427.5" y="1678.5">
+                - assetService: AssetService
+            </text>
+            <text x="427.5" y="1720.5">
+                + assignAsset(changeS: AssetStateChangeDTO): ResponseEntity&lt;Asset&gt;
+            </text>
+        </g>
+        <path d="M 2301 271 L 2301 254.5 Q 2301 241 2287.5 241 L 1934.5 241 Q 1921 241 1921 254.5 L 1921 271" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1921 271 L 1921 347.5 Q 1921 361 1934.5 361 L 2287.5 361 Q 2301 361 2301 347.5 L 2301 271" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1921 271 L 2301 271" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="2110.5" y="261.5">
+                SpaConfiguration
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="1926.5" y="288.5">
+                + addResourceHandlers(registry: ResourceHandlerRegistry): void
+            </text>
+            <text x="1926.5" y="302.5">
+                + addViewControllers(registry: ViewControllerRegistry): void
+            </text>
+        </g>
+        <path d="M 1451 1211 L 1451 1194.5 Q 1451 1181 1437.5 1181 L 1014.5 1181 Q 1001 1181 1001 1194.5 L 1001 1211" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1001 1211 L 1001 1297.5 Q 1001 1311 1014.5 1311 L 1437.5 1311 Q 1451 1311 1451 1297.5 L 1451 1211" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1001 1211 L 1451 1211" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="1225.5" y="1201.5">
+                AssetRepository
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="1006.5" y="1228.5">
+                + findByAssetState(assetState: AssetState, pageable: Pageable): Page&lt;Asset&gt;
+            </text>
+            <text x="1006.5" y="1242.5">
+                + findByAssetName(assetName: String, pageable: Pageable): Page&lt;Asset&gt;
+            </text>
+            <text x="1006.5" y="1256.5">
+                + findByPersonEmail(personEmail: String, pageable: Pageable): Page&lt;Asset&gt;
+            </text>
+        </g>
+        <path d="M 1411 1361 L 1411 1344.5 Q 1411 1331 1397.5 1331 L 1014.5 1331 Q 1001 1331 1001 1344.5 L 1001 1361" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1001 1361 L 1001 1397.5 Q 1001 1411 1014.5 1411 L 1397.5 1411 Q 1411 1411 1411 1397.5 L 1411 1361" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1001 1361 L 1411 1361" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="1205.5" y="1351.5">
+                DocRepository
+            </text>
+        </g>
+        <path d="M 1336 1466 L 1336 1449.5 Q 1336 1436 1322.5 1436 L 1089.5 1436 Q 1076 1436 1076 1449.5 L 1076 1466" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1076 1466 L 1076 1552.5 Q 1076 1566 1089.5 1566 L 1322.5 1566 Q 1336 1566 1336 1552.5 L 1336 1466" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1076 1466 L 1336 1466" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="1205.5" y="1456.5">
+                PersonRepository
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="1081.5" y="1483.5">
+                + findFirstByEmail(email: String): Person
+            </text>
+        </g>
+        <path d="M 2071 1161 L 2071 1144.5 Q 2071 1131 2057.5 1131 L 1704.5 1131 Q 1691 1131 1691 1144.5 L 1691 1161" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1691 1161 L 1691 1347.5 Q 1691 1361 1704.5 1361 L 2057.5 1361 Q 2071 1361 2071 1347.5 L 2071 1161" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1691 1161 L 2071 1161" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="1880.5" y="1151.5">
+                AssetService
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="1696.5" y="1178.5">
+                - assetRepository: AssetRepository
+            </text>
+            <text x="1696.5" y="1192.5">
+                - personRepository: PersonRepository
+            </text>
+            <text x="1696.5" y="1234.5">
+                + assignAsset(assetId: String, personEmail: String): Optional&lt;Asset&gt;
+            </text>
+            <text x="1696.5" y="1248.5">
+                + updateAssetState(assetId: String, newState: AssetState): Asset
+            </text>
+            <text x="1696.5" y="1262.5">
+                + updateAssetForUnassignment(assetId: String): Asset
+            </text>
+        </g>
+        <path d="M 2041 1441 L 2041 1424.5 Q 2041 1411 2027.5 1411 L 1704.5 1411 Q 1691 1411 1691 1424.5 L 1691 1441" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1691 1441 L 1691 1527.5 Q 1691 1541 1704.5 1541 L 2027.5 1541 Q 2041 1541 2041 1527.5 L 2041 1441" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1691 1441 L 2041 1441" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="1865.5" y="1431.5">
+                DocService
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="1696.5" y="1458.5">
+                - docRepository: DocRepository
+            </text>
+            <text x="1696.5" y="1500.5">
+                + updateDocType(docId: String, newType: DocType): Doc
+            </text>
+        </g>
+        <path d="M 2036 1601 L 2036 1584.5 Q 2036 1571 2022.5 1571 L 1704.5 1571 Q 1691 1571 1691 1584.5 L 1691 1601" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1691 1601 L 1691 1687.5 Q 1691 1701 1704.5 1701 L 2022.5 1701 Q 2036 1701 2036 1687.5 L 2036 1601" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1691 1601 L 2036 1601" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="1863" y="1591.5">
+                MailService
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="1696.5" y="1618.5">
+                + logger: Logger
+            </text>
+            <text x="1696.5" y="1632.5">
+                + FROM_MAIL: String
+            </text>
+            <text x="1696.5" y="1674.5">
+                + getJavaMailSender(): JavaMailSender
+            </text>
+            <text x="1696.5" y="1688.5">
+                + sendMail(mail: Mail): boolean
+            </text>
+        </g>
+        <path d="M 2411 1451 L 2411 1434.5 Q 2411 1421 2397.5 1421 L 2084.5 1421 Q 2071 1421 2071 1434.5 L 2071 1451" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 2071 1451 L 2071 1637.5 Q 2071 1651 2084.5 1651 L 2397.5 1651 Q 2411 1651 2411 1637.5 L 2411 1451" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 2071 1451 L 2411 1451" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="2240.5" y="1441.5">
+                MailValidatorService
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="2076.5" y="1468.5">
+                + DISIFY_EMAIL_VALIDATOR_BASE_URL: String
+            </text>
+            <text x="2076.5" y="1482.5">
+                + REQUEST_TIMEOUT: Duration
+            </text>
+            <text x="2076.5" y="1496.5">
+                + USER_AGENT: String
+            </text>
+            <text x="2076.5" y="1510.5">
+                + logger: Logger
+            </text>
+            <text x="2076.5" y="1524.5">
+                - webClient: WebClient
+            </text>
+            <text x="2076.5" y="1566.5">
+                + MailValidatorService()
+            </text>
+            <text x="2076.5" y="1594.5">
+                validateEmail(email: String): MailInformation
+            </text>
+        </g>
+        <path d="M 2401 1691 L 2401 1674.5 Q 2401 1661 2387.5 1661 L 2084.5 1661 Q 2071 1661 2071 1674.5 L 2071 1691" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 2071 1691 L 2071 1737.5 Q 2071 1751 2084.5 1751 L 2387.5 1751 Q 2401 1751 2401 1737.5 L 2401 1691" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 2071 1691 L 2401 1691" fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="14px">
+            <text x="2235.5" y="1681.5">
+                ServiceUtils
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" font-size="12px">
+            <text x="2076.5" y="1708.5">
+                + logRequest(logger: Logger): ExchangeFilterFunction
+            </text>
+        </g>
+    </g>
+</svg>
