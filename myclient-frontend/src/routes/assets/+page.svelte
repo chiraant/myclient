@@ -299,12 +299,6 @@
       <option value="Disposed">Disposed</option>
     </select>
   </div>
-  <div class="col-3">
-    <a
-      class="btn btn-primary"
-      href={"/assets?pageNumber=1&assetState=" + assetState}
-      role="button">Apply</a>
-  </div>
 </div>
 
 <h1>All Assets</h1>

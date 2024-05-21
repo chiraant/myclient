@@ -3,25 +3,7 @@
   import auth from "../../auth.service";
   import { onMount } from "svelte";
   import axios from "axios";
-
-
-
-  let quotes = []; // Variable zum Speichern des Zitats
-
-  onMount(() => {
-    getapi("https://zenquotes.io/api/quotes/");
-  });
-
-  async function getapi(url) {
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      quotes = data; // Speichert die Daten in der Svelte-Variable
-      console.log(data); // Loggt die Daten zur Überprüfung
-    } catch (error) {
-      console.error('Error fetching quotes:', error);
-    }
-  }
+ 
 </script>
 
 <h1>MyAccount Details</h1>
@@ -41,16 +23,4 @@
   <p>Not logged in</p>
 {/if}
 
-{#if quotes.length > 0}
-  <div class="quotes">
-    {#each quotes as quote}
-      <div class="quote">
-        <p>"{quote.q}"</p>
-        <cite>- {quote.a}</cite>
-      </div>
-    {/each}
-  </div>
-{:else}
-  <p>Loading quotes...</p>
-{/if}
 

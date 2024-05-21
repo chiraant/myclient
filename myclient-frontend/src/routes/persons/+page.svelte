@@ -84,6 +84,26 @@
                 console.log(error);
             });
     }
+    function deletePerson(personId) {
+        var config = {
+            method: "delete",
+            url: api_root + "/api/person/" + personId,
+            headers: {
+                "Content-Type": "application/json",
+                Authorization: "Bearer " + $jwt_token,
+            },
+        };
+
+        axios(config)
+            .then(function (response) {
+                alert("Person deleted");
+                getPersons();
+            })
+            .catch(function (error) {
+                alert("Could not delete Person");
+                console.log(error);
+            });
+    }
 </script>
 
 <h1 class="mt-3">Create Person</h1>
@@ -132,6 +152,9 @@
             <th scope="col">First Name</th>
             <th scope="col">Last Name</th>
             <th scope="col">Email</th>
+            {#if $isAuthenticated && $user.user_roles && $user.user_roles.includes("admin")}
+                <th scope="col">Actions</th>
+            {/if}
         </tr>
     </thead>
     <tbody>
@@ -140,6 +163,16 @@
                 <td>{person.firstName}</td>
                 <td>{person.lastName}</td>
                 <td>{person.email}</td>
+                {#if $isAuthenticated && $user.user_roles && $user.user_roles.includes("admin")}
+                    <td>
+                        <button
+                            type="button"
+                            class="btn btn-danger"
+                            on:click={() => deletePerson(person.id)}
+                            >Delete</button
+                        >
+                    </td>
+                {/if}
             </tr>
         {/each}
     </tbody>
