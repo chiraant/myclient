@@ -29,11 +29,14 @@
   $: {
     if ($jwt_token !== "") {
       let searchParams = $page.url.searchParams;
-      if (searchParams.has("page")) {
-        currentPage = searchParams.get("page");
+      if (searchParams.has("pageNumber")) {
+        currentPage = searchParams.get("pageNumber");
       } else {
         currentPage = "1";
       }
+      if (searchParams.has("assetState")) {
+        assetState = searchParams.get("assetState");
+      } 
       getAssets();
     }
   }
@@ -47,7 +50,7 @@
 
     // If a state is selected, add it to the query parameters
     if (assetState) {
-      query += "&state=" + assetState;
+      query += "&assetState=" + assetState;
     }
 
     axios
@@ -289,17 +292,17 @@
   </div>
   <div class="col-3">
     <select bind:value={assetState} class="form-select" id="state" type="text">
-      <option value="ALL">All</option>
-      <option value="ASSIGNED">Assigned</option>
-      <option value="UNASSIGNED">Unassigned</option>
-      <option value="IN_REPAIR">In Repair</option>
-      <option value="DISPOSED">Disposed</option>
+      <option value="">All</option>
+      <option value="Assigned">Assigned</option>
+      <option value="Unassigned">Unassigned</option>
+      <option value="InRepair">In Repair</option>
+      <option value="Disposed">Disposed</option>
     </select>
   </div>
   <div class="col-3">
     <a
       class="btn btn-primary"
-      href={"/assets?page=1&assetState=" + assetState}
+      href={"/assets?pageNumber=1&assetState=" + assetState}
       role="button">Apply</a>
   </div>
 </div>
@@ -411,7 +414,7 @@
         <a
           class="page-link"
           class:active={currentPage == i + 1}
-          href={"/assets?page=" + (i + 1)}
+          href={"/assets?pageNumber=" + (i + 1)}
           >{i + 1}
         </a>
       </li>
