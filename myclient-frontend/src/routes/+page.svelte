@@ -1,8 +1,6 @@
 <script>
-    import { onMount } from "svelte";
-    import axios from "axios";
-    import { isAuthenticated } from "../store";
     import auth from "../auth.service";
+    import { isAuthenticated, user } from "../store";
 
     let username = "";
     let password = "";
@@ -22,8 +20,8 @@
 
 {#if $isAuthenticated}
     <h1>This is MyClient</h1>
-    <!-- Beispiel für die Verwendung von Bildern im Ordner 'static/images' -->
-    <img src="/images/vite.svg" alt="Vite Logo" />
+    <h3>Welcome, {$user.given_name}!</h3> <br>
+    <p>We love to see you back here! Just as a tipp, MyClient is only useful, if you give him love and attention.</p>
 {:else}
     <div class="container mt-5">
         <div class="row justify-content-center">

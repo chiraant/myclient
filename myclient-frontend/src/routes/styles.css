@@ -55,3 +55,44 @@ thead {
   background-color: #007bff; /* Hellblau für Kopfzeilen der Tabelle */
   color: white;
 }
+h1 {
+  font-size: 2.5rem; /* Größere Schriftgröße für den Haupttitel */
+  color: #004085; /* Ein dunklerer Blauton für mehr Prägnanz */
+  font-weight: bold; /* Fettschrift für bessere Sichtbarkeit */
+  margin-bottom: 0.5rem; /* Abstand unter dem Titel */
+}
+
+/* Stil für den Unterüberschrift */
+h3 {
+  font-size: 1.75rem; /* Größere Schriftgröße für Unterüberschriften */
+  color: #0056b3; /* Dunkles Blau, konsistent mit anderem Text */
+  font-weight: normal; /* Standardgewichtung */
+  margin-bottom: 1rem; /* Abstand unter der Unterüberschrift */
+}
+
+/* Stil für den Willkommenstext */
+p {
+  font-size: 1.25rem; /* Größere Schriftgröße für Paragraphen */
+  color: #007bff; /* Hellblaues Farbschema für eine freundliche Note */
+  line-height: 1.5; /* Zeilenabstand für bessere Lesbarkeit */
+}
+
+/* Anpassungen für Link zur Registrierung */
+a {
+  font-size: 1.1rem; /* Größere Schriftgröße für Links */
+  color: #0056b3; /* Dunkles Blau für Links */
+  text-decoration: underline; /* Unterstrichen für bessere Sichtbarkeit */
+}
+
+/* Anpassungen für die Karte */
+.card {
+  background-color: #ffffff; /* Weißer Hintergrund für Karten */
+  border: 1px solid #ced4da; /* Graue Umrandung für die Karte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichter Schatten für 3D-Effekt */
+}
+
+.card-header {
+  background-color: #e7f1ff; /* Hintergrundfarbe der Kopfzeile der Karte */
+  font-size: 1.2rem; /* Größere Schrift für Kopfzeilen */
+  color: #0056b3; /* Dunkles Blau für Text in Kopfzeilen */
+}
