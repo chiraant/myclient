@@ -100,3 +100,12 @@
 | Daten | DocTitle, UploadDate, AssetName, PurchaseDate, GuaranteeEnd, AssetState, PersonEmail, FirstName, LastName, Email |
 
 
+
+
+# ER Erläuterung
+
+Eine Person kann mehrere Assets besitzen und ein Asset kann zu einer Person gehören.
+
+Eine Person kann mehrere Dokumente erstellen und ein Dokument hat immer eine Person, die es erstellt hat.
+
+![ER diagram](figures/MyClientER.drawio.svg)
