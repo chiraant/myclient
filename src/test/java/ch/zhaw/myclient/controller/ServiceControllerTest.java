@@ -41,7 +41,7 @@ public class ServiceControllerTest {
         // create a test doc and convert to Json
         AssetStateChangeDTO assetChange = new AssetStateChangeDTO();
         assetChange.setPersonEmail("achiramal@test.ch");
-        assetChange.setAssetId("6645e8dfdb66af2659445f0c");
+        assetChange.setAssetId("664de23e80e86020321f69e9");
         
         var jsonBody = ow.writeValueAsString(assetChange);
         // POST Json to service with authorization header
