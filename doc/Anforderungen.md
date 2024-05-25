@@ -104,8 +104,16 @@
 
 # ER Erläuterung
 
-Eine Person kann mehrere Assets besitzen und ein Asset kann zu einer Person gehören.
+Das Diagram zeigt die Entitäten und dessen Beziehungen
 
+Eine Person kann mehrere Assets besitzen und ein Asset kann zu einer Person gehören.
 Eine Person kann mehrere Dokumente erstellen und ein Dokument hat immer eine Person, die es erstellt hat.
 
 ![ER diagram](figures/MyClientER.drawio.svg)
+
+
+# BPMN Erläuterung
+
+Das BPMN diagram bildet die Prozesse ab, die man durch die Nutzung von MyClient durchläuft. Durch die Startereignisse wird geezeigt was die auslöser sind, wann man das Tool nutzen soll. Was es nicht abbildet, sind die Prozesse die vor den Ereignissen durchlaufen.
+
+![BPMN diagramm](figures/MyClientBPMN.png)
