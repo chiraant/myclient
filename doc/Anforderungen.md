@@ -117,3 +117,11 @@ Eine Person kann mehrere Dokumente erstellen und ein Dokument hat immer eine Per
 Das BPMN diagram bildet die Prozesse ab, die man durch die Nutzung von MyClient durchläuft. Durch die Startereignisse wird geezeigt was die auslöser sind, wann man das Tool nutzen soll. Was es nicht abbildet, sind die Prozesse die vor den Ereignissen durchlaufen.
 
 ![BPMN diagramm](figures/MyClientBPMN.png)
+
+
+# Mockup Skizze UIs
+
+![Mockuup 1](figures/Asset_admin.png)
+![Mockuup 2](figures/Asset_User.png)
+![Mockuup 3](figures/Document_user.png)
+![Mockuup 4](figures/Persons.png)
