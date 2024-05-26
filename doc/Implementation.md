@@ -158,3 +158,20 @@ Die Login-Seite ermöglicht Benutzern, sich mit ihrem Benutzernamen und Passwort
 - **Formularvalidierung**: Das Anmeldeformular verwendet Bootstrap zur Validierung der Eingabefelder.
 - **Anmeldung**: Wenn die Anmeldedaten korrekt sind, wird der Benutzer angemeldet und zu einer geschützten Seite weitergeleitet.
 - **Willkommensnachricht**: Nach erfolgreicher Anmeldung wird eine Willkommensnachricht angezeigt, die den Benutzernamen des Benutzers enthält.
+
+
+# Aufgaben und Funktionen eingebundener Drittsysteme
+
+## Mailfunktion
+
+Die in das System eingebundene Mailfunktion ermöglicht das Versenden von E-Mails direkt aus der Anwendung heraus. Diese Funktion wird über einen externen E-Mail-Dienst bereitgestellt, der folgende Aufgaben und Funktionen umfasst:
+
+1. **Versenden von E-Mails**: Die Mailfunktion ermöglicht das Versenden von E-Mails an Benutzer und Administratoren. Dies wird verwendet, um Benachrichtigungen, Informationen und Anfragen zu kommunizieren.
+
+2. **Authentifizierung**: Der Maildienst authentifiziert sich über SMTP (Simple Mail Transfer Protocol) mit einem externen Mail-Server, um E-Mails zu versenden. Hierbei werden Sicherheitsprotokolle wie STARTTLS zur Verschlüsselung der Verbindung verwendet.
+
+3. **Vorlagen und Anpassungen**: Die Anwendung ermöglicht das Versenden von E-Mails mit individuell anpassbaren Inhalten. Dies umfasst den Betreff, den Nachrichtentext und den Empfänger der E-Mail.
+
+4. **Fehlerbehandlung**: Die Mailfunktion umfasst Mechanismen zur Fehlerbehandlung, die sicherstellen, dass bei Problemen während des E-Mail-Versands entsprechende Fehlermeldungen geloggt und verarbeitet werden.
+
+Die Mailfunktion stellt sicher, dass die Kommunikation zwischen der Anwendung und den Benutzern nahtlos funktioniert und wichtige Informationen effizient übermittelt werden können.
