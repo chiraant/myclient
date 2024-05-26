@@ -72,3 +72,89 @@
 
 ## MailValidatorService
 - **Verwendungszweck**: Diese Klasse bietet Validierungslogik für E-Mails. Sie stellt sicher, dass die E-Mail-Daten korrekt sind, bevor sie gesendet werden.
+
+
+## Frontend Beschreibung und Screenshots
+
+## My Assets Page
+Die My Assets-Seite ermöglicht die Verwaltung und Anzeige von Assets. Die Seite besteht aus folgenden Komponenten:
+
+- **Navigation Bar**: Beinhaltet Links zu verschiedenen Bereichen der Applikation (MyAssets, MyDocuments, MyPersons, MyAccount) und den Logout-Button.
+- **Asset Management Section**: Zeigt eine Tabelle aller Assets und ermöglicht das Hinzufügen, Zuweisen, Reparieren, Unassignen und Entsorgen von Assets.
+
+### Benutzerrollen
+
+- **Admin**: Kann Assets erstellen, zuweisen, unassignen, zur Reparatur schicken und entsorgen.
+- **Nicht-Admin**: Kann Nachrichten an den Administrator senden.
+
+### Funktionen
+
+- **Asset Filter**: Ermöglicht das Filtern der Assets nach Status (Assigned, Unassigned, In Repair, Disposed).
+- **Pagination**: Zeigt Assets seitenweise an.
+![Frontend 1](figures/Frontend_Asset_Admin.png)
+
+![Frontend 2](figures/Frontend_Asset_User.png)
+
+## MyDocuments
+
+Die My Documents-Seite ermöglicht die Verwaltung und Anzeige von Dokumenten. Die Seite besteht aus folgenden Komponenten:
+
+- **Navigation Bar**: Beinhaltet Links zu verschiedenen Bereichen der Applikation (MyAssets, MyDocuments, MyPersons, MyAccount) und den Logout-Button.
+- **Document Management Section**: Zeigt eine Tabelle aller Dokumente und ermöglicht das Hinzufügen und Aktualisieren von Dokumenten.
+
+### Funktionen
+
+- **Dokumentenfilter**: Ermöglicht das Filtern der Dokumente nach Typ.
+- **Dokumentenerstellung**: Ermöglicht das Erstellen neuer Dokumente durch Eingabe von Titel, Hochladedatum und Dokumenttyp.
+- **Dokumentenaktualisierung**: Ermöglicht das Aktualisieren des Dokumententyps.
+
+![Frontend 3](figures/Frontend_Document.png)
+
+
+## MyAccount Page
+Die MyAccount-Seite zeigt die Kontoinformationen des aktuell angemeldeten Benutzers. Die Seite besteht aus folgenden Komponenten:
+
+- **Navigation Bar**: Beinhaltet Links zu verschiedenen Bereichen der Applikation (MyAssets, MyDocuments, MyPersons, MyAccount) und den Logout-Button.
+- **Account Details Section**: Zeigt die persönlichen Informationen des Benutzers, wie Vorname, Nachname, E-Mail-Adresse und weitere Details.
+- **Benutzerinformationen**:
+  - **Profilbild**: Zeigt das Profilbild des Benutzers.
+  - **Name**: Zeigt den vollständigen Namen des Benutzers.
+  - **Nickname**: Zeigt den Spitznamen des Benutzers.
+  - **Vorname**: Zeigt den Vornamen des Benutzers.
+  - **Nachname**: Zeigt den Nachnamen des Benutzers.
+  - **E-Mail**: Zeigt die E-Mail-Adresse des Benutzers.
+  - **Rollen**: Zeigt die Rollen des Benutzers an, falls vorhanden.
+
+Die Seite verwendet die Authentifizierungsinformationen aus dem `user`-Store, um die Benutzerinformationen anzuzeigen. Wenn der Benutzer nicht angemeldet ist, wird eine Meldung "Not logged in" angezeigt.
+
+
+![Frontend 4](figures/Frontend_Account.png)
+
+## MyPersons
+
+Die MyPersons-Seite ermöglicht die Verwaltung und Anzeige von Personen. Die Seite besteht aus folgenden Komponenten:
+
+- **Navigation Bar**: Beinhaltet Links zu verschiedenen Bereichen der Applikation (MyAssets, MyDocuments, MyPersons, MyAccount) und den Logout-Button.
+- **Person Management Section**: Zeigt eine Tabelle aller Personen und ermöglicht das Hinzufügen und Löschen von Personen.
+
+### Funktionen
+
+- **Personenverwaltung**: Ermöglicht das Erstellen neuer Personen durch Eingabe von Vorname, Nachname und E-Mail-Adresse.
+- **E-Mail-Validierung**: Validiert die E-Mail-Adresse, bevor eine neue Person erstellt wird.
+- **Personenanzeige**: Zeigt eine Liste aller Personen an, die in der Anwendung registriert sind.
+- **Personenlöschung**: Ermöglicht das Löschen einer Person aus der Liste (nur für Admin-Benutzer).
+
+![Frontend 5](figures/Frontend_Persons_Admin.png)
+
+
+## Login
+Die Login-Seite ermöglicht Benutzern, sich mit ihrem Benutzernamen und Passwort anzumelden. Die Seite besteht aus folgenden Komponenten:
+
+- **Login-Formular**: Ein Formular, das den Benutzernamen und das Passwort des Benutzers erfordert, um sich anzumelden.
+- **Authentifizierung**: Verwendet den Authentifizierungsdienst, um die Anmeldedaten zu überprüfen und den Benutzer anzumelden.
+
+### Funktionen
+
+- **Formularvalidierung**: Das Anmeldeformular verwendet Bootstrap zur Validierung der Eingabefelder.
+- **Anmeldung**: Wenn die Anmeldedaten korrekt sind, wird der Benutzer angemeldet und zu einer geschützten Seite weitergeleitet.
+- **Willkommensnachricht**: Nach erfolgreicher Anmeldung wird eine Willkommensnachricht angezeigt, die den Benutzernamen des Benutzers enthält.
